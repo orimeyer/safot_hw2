@@ -17,7 +17,7 @@ fun sig5 f xss = List.map (List.map f) xss
 fun sig6 b x y = if b then x else y
 
 (* 7. unit -> int *)
-fun sig7 () = 0
+fun sig7 () = 10
 
 (* 8. ('a -> 'b) -> ('b -> 'c) -> 'a -> 'd -> 'c *)
 fun sig8 f g x _ = g (f x)
